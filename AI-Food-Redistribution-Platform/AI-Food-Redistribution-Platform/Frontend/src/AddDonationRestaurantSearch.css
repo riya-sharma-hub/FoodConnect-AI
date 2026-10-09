@@ -1,0 +1,251 @@
+
+.donation-restaurant-heading {
+  margin-bottom: 18px;
+}
+
+.donation-restaurant-heading .add-donation-label {
+  margin-bottom: 7px;
+}
+
+.donation-restaurant-heading h2 {
+  margin: 0 0 8px;
+  color: #263d31;
+  font-size: 24px;
+  line-height: 1.25;
+}
+
+.donation-restaurant-heading p {
+  max-width: 720px;
+  margin: 0;
+  color: #718078;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.donation-restaurant-heading strong {
+  color: #4c6b57;
+}
+
+.donation-search-note {
+  margin-bottom: 16px;
+  padding: 13px 15px;
+  border: 1px solid #dce7d9;
+  border-radius: 11px;
+  background: #f4f8f2;
+  color: #607267;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.donation-restaurant-search {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 42px minmax(0, 1fr);
+  align-items: end;
+  gap: 12px;
+}
+
+.donation-search-field {
+  min-width: 0;
+}
+
+.donation-search-field label {
+  display: block;
+  margin-bottom: 8px;
+  color: #4c6b57;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+.donation-search-field input {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 48px;
+  border: 1px solid #d4dfd2;
+  border-radius: 11px;
+  background: #fbfcfa;
+  color: #263d31;
+  padding: 13px 14px;
+  font-family: inherit;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.donation-search-field input::placeholder {
+  color: #9aa49d;
+}
+
+.donation-search-field input:focus {
+  border-color: #a8c3a0;
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(168, 195, 160, 0.18);
+}
+
+.donation-search-field input:disabled {
+  background: #f0f3ef;
+  color: #9aa39c;
+  cursor: not-allowed;
+}
+
+.donation-search-or {
+  padding-bottom: 15px;
+  text-align: center;
+  color: #9aa59d;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+.donation-restaurant-suggestions {
+  margin-top: 9px;
+  overflow: hidden;
+  border: 1px solid #d9e4d6;
+  border-radius: 13px;
+  background: #fff;
+  box-shadow: 0 10px 25px rgba(58, 76, 63, 0.08);
+}
+
+.donation-restaurant-option {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px 15px;
+  border: 0;
+  border-bottom: 1px solid #edf1ec;
+  background: #fff;
+  text-align: left;
+  cursor: pointer;
+}
+
+.donation-restaurant-option:last-child {
+  border-bottom: 0;
+}
+
+.donation-restaurant-option:hover {
+  background: #f5f8f3;
+}
+
+.donation-restaurant-option > div {
+  min-width: 0;
+}
+
+.donation-restaurant-option strong {
+  display: block;
+  color: #2e4134;
+  font-size: 14px;
+}
+
+.donation-restaurant-option span {
+  display: block;
+  margin-top: 4px;
+  color: #6e7e74;
+  font-size: 11px;
+}
+
+.donation-restaurant-option small {
+  display: block;
+  margin-top: 4px;
+  overflow: hidden;
+  color: #929c95;
+  font-size: 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.donation-restaurant-option .donation-option-arrow {
+  flex: 0 0 auto;
+  color: #4c6b57;
+  font-size: 18px;
+}
+
+.donation-suggestion-loading,
+.donation-suggestion-empty,
+.donation-suggestion-error {
+  padding: 15px;
+  color: #718077;
+  font-size: 12px;
+}
+
+.donation-suggestion-error {
+  color: #a45745;
+}
+
+.selected-donation-drop-point {
+  margin-top: 16px;
+  padding: 18px 20px;
+  border: 1px solid #cddbc9;
+  border-radius: 14px;
+  background: #f1f6ef;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.selected-donation-drop-point > div {
+  min-width: 0;
+}
+
+.selected-donation-drop-point > div > span {
+  display: block;
+  margin-bottom: 6px;
+  color: #718574;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.2px;
+}
+
+.selected-donation-drop-point h2 {
+  margin: 0;
+  color: #304938;
+  font-size: 18px;
+}
+
+.selected-donation-drop-point p {
+  margin: 5px 0 0;
+  color: #77857b;
+  font-size: 12px;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.donation-change-restaurant {
+  flex: 0 0 auto;
+  padding: 9px 15px;
+  border: 1px solid #cddbc9;
+  border-radius: 9px;
+  background: #fff;
+  color: #4c6b57;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.donation-change-restaurant:hover {
+  background: #eef4eb;
+}
+
+@media (max-width: 700px) {
+  .donation-restaurant-search {
+    grid-template-columns: 1fr;
+  }
+
+  .donation-search-or {
+    padding: 0;
+    text-align: center;
+  }
+
+  .selected-donation-drop-point {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .donation-change-restaurant {
+    width: 100%;
+  }
+}
